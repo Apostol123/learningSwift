@@ -1,0 +1,6 @@
+framework module DataManagementCore {
+  umbrella header "DataManagementCore.h"
+
+  export *
+  module * { export * }
+}

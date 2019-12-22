@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dKW-72-oBR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xK8-l0-kHt">
+            <objects>
+                <collectionViewController id="dKW-72-oBR" customClass="ViewController" customModule="ScrappingTheWeb" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="UoH-0Y-iP3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Oov-Cj-ufp">
+                            <size key="itemSize" width="276" height="285"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="16"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="songCell" id="B9k-Zo-YoG" customClass="SongsCell" customModule="ScrappingTheWeb" customModuleProvider="target">
+                                <rect key="frame" x="69" y="16" width="276" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dPJ-TA-G8D">
+                                    <rect key="frame" x="0.0" y="0.0" width="276" height="285"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v3z-lk-1MT">
+                                            <rect key="frame" x="0.0" y="0.0" width="276" height="232.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="v3z-lk-1MT" secondAttribute="height" multiplier="183:154" id="t7G-dX-5Ny"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Iz-Qt-YBd">
+                                            <rect key="frame" x="0.0" y="232.5" width="276" height="52.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6Iz-Qt-YBd" firstAttribute="top" secondItem="v3z-lk-1MT" secondAttribute="bottom" id="0vm-56-NDv"/>
+                                        <constraint firstItem="6Iz-Qt-YBd" firstAttribute="leading" secondItem="dPJ-TA-G8D" secondAttribute="leading" id="Bvd-1r-XZg"/>
+                                        <constraint firstAttribute="trailing" secondItem="6Iz-Qt-YBd" secondAttribute="trailing" id="Ufo-oL-1hz"/>
+                                        <constraint firstAttribute="bottom" secondItem="6Iz-Qt-YBd" secondAttribute="bottom" id="aFm-6V-psr"/>
+                                        <constraint firstItem="v3z-lk-1MT" firstAttribute="top" secondItem="dPJ-TA-G8D" secondAttribute="top" id="b51-fD-Yn3"/>
+                                        <constraint firstAttribute="trailing" secondItem="v3z-lk-1MT" secondAttribute="trailing" id="ssw-5k-Tlm"/>
+                                        <constraint firstItem="v3z-lk-1MT" firstAttribute="leading" secondItem="dPJ-TA-G8D" secondAttribute="leading" id="uEm-Qw-vJ4"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="customSize" width="276" height="285"/>
+                                <connections>
+                                    <outlet property="labelSong" destination="6Iz-Qt-YBd" id="x3Y-ET-jKF"/>
+                                    <outlet property="songImage" destination="v3z-lk-1MT" id="98u-CG-EMP"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="dKW-72-oBR" id="Rds-1s-xnC"/>
+                            <outlet property="delegate" destination="dKW-72-oBR" id="2oc-KK-4ms"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WxE-tG-VMV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-430.43478260869568" y="27.455357142857142"/>
+        </scene>
+    </scenes>
+</document>

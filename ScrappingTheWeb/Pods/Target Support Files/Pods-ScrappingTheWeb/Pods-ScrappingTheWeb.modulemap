@@ -1,0 +1,6 @@
+framework module Pods_ScrappingTheWeb {
+  umbrella header "Pods-ScrappingTheWeb-umbrella.h"
+
+  export *
+  module * { export * }
+}

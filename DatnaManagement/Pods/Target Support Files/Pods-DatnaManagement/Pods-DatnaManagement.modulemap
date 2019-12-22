@@ -1,0 +1,6 @@
+framework module Pods_DatnaManagement {
+  umbrella header "Pods-DatnaManagement-umbrella.h"
+
+  export *
+  module * { export * }
+}

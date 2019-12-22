@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D3C046023A02A37008D2718 /* CardPresenterSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3C045F23A02A37008D2718 /* CardPresenterSections.swift */; };
+		6D3C046223A02AB9008D2718 /* CardModelSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3C046123A02AB9008D2718 /* CardModelSections.swift */; };
+		6D3C046423A02DA5008D2718 /* CardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3C046323A02DA5008D2718 /* CardPresenter.swift */; };
+		6D58F93523985C1E0095C37D /* IteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D58F93423985C1E0095C37D /* IteractorProtocol.swift */; };
+		6D58F93723985C660095C37D /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D58F93623985C660095C37D /* Interactor.swift */; };
+		6D6AB6AB23A960E100813BEC /* ViewControllerProtocl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6AB6AA23A960E100813BEC /* ViewControllerProtocl.swift */; };
+		6DA2BB3823941AB70040FF52 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2BB3623941AB70040FF52 /* CustomCollectionViewCell.swift */; };
+		6DA2BB3923941AB70040FF52 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DA2BB3723941AB70040FF52 /* CustomCollectionViewCell.xib */; };
+		6DA2BB3E23941C580040FF52 /* DMServiceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2BB3D23941C580040FF52 /* DMServiceProxy.m */; };
+		6DA2BB4123941D5C0040FF52 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2BB4023941D5C0040FF52 /* Result.swift */; };
+		6DA2BB4423941F3D0040FF52 /* UserOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2BB4323941F3D0040FF52 /* UserOC.m */; };
+		6DA2BB48239422380040FF52 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2BB47239422380040FF52 /* User.swift */; };
+		6DE2E9082395AC090031472F /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2E9072395AC090031472F /* DataManagerProtocol.swift */; };
+		6DE2E90A2395AF910031472F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2E9092395AF910031472F /* DataManager.swift */; };
+		6DF2771E23941103007414A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF2771D23941103007414A5 /* AppDelegate.swift */; };
+		6DF2772023941103007414A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF2771F23941103007414A5 /* SceneDelegate.swift */; };
+		6DF2772223941103007414A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF2772123941103007414A5 /* ViewController.swift */; };
+		6DF2772523941103007414A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF2772323941103007414A5 /* Main.storyboard */; };
+		6DF2772723941104007414A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF2772623941104007414A5 /* Assets.xcassets */; };
+		6DF2772A23941104007414A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF2772823941104007414A5 /* LaunchScreen.storyboard */; };
+		6DFE5AEF2396F0710017AB7D /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE5AEE2396F0710017AB7D /* CardModel.swift */; };
+		6DFE5AF12396F0C90017AB7D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE5AF02396F0C90017AB7D /* Image.swift */; };
+		6DFE5AF32396FCE60017AB7D /* GenericGetMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE5AF22396FCE60017AB7D /* GenericGetMethod.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29445AC25546112670E18404 /* Pods-DatnaManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatnaManagement.release.xcconfig"; path = "Target Support Files/Pods-DatnaManagement/Pods-DatnaManagement.release.xcconfig"; sourceTree = "<group>"; };
+		6D3C045F23A02A37008D2718 /* CardPresenterSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresenterSections.swift; sourceTree = "<group>"; };
+		6D3C046123A02AB9008D2718 /* CardModelSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModelSections.swift; sourceTree = "<group>"; };
+		6D3C046323A02DA5008D2718 /* CardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresenter.swift; sourceTree = "<group>"; };
+		6D58F92A23984FCA0095C37D /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D58F93423985C1E0095C37D /* IteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteractorProtocol.swift; sourceTree = "<group>"; };
+		6D58F93623985C660095C37D /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		6D6AB6AA23A960E100813BEC /* ViewControllerProtocl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocl.swift; sourceTree = "<group>"; };
+		6DA2BB3623941AB70040FF52 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		6DA2BB3723941AB70040FF52 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		6DA2BB3B23941C580040FF52 /* DatnaManagement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DatnaManagement-Bridging-Header.h"; sourceTree = "<group>"; };
+		6DA2BB3C23941C580040FF52 /* DMServiceProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMServiceProxy.h; sourceTree = "<group>"; };
+		6DA2BB3D23941C580040FF52 /* DMServiceProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMServiceProxy.m; sourceTree = "<group>"; };
+		6DA2BB4023941D5C0040FF52 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		6DA2BB4223941F3D0040FF52 /* UserOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserOC.h; sourceTree = "<group>"; };
+		6DA2BB4323941F3D0040FF52 /* UserOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserOC.m; sourceTree = "<group>"; };
+		6DA2BB47239422380040FF52 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6DE2E9072395AC090031472F /* DataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerProtocol.swift; sourceTree = "<group>"; };
+		6DE2E9092395AF910031472F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6DF2771A23941103007414A5 /* DatnaManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatnaManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF2771D23941103007414A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DF2771F23941103007414A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6DF2772123941103007414A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DF2772423941103007414A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DF2772623941104007414A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DF2772923941104007414A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DF2772B23941104007414A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DFE5AEE2396F0710017AB7D /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		6DFE5AF02396F0C90017AB7D /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		6DFE5AF22396FCE60017AB7D /* GenericGetMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericGetMethod.swift; sourceTree = "<group>"; };
+		851533B5118A00936DE64E0F /* Pods_DatnaManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatnaManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C141530C0FD14D138D3B60 /* Pods-DatnaManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatnaManagement.debug.xcconfig"; path = "Target Support Files/Pods-DatnaManagement/Pods-DatnaManagement.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DF2771723941103007414A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29BDA974425FB19413C17FD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1C141530C0FD14D138D3B60 /* Pods-DatnaManagement.debug.xcconfig */,
+				29445AC25546112670E18404 /* Pods-DatnaManagement.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D3C045E23A02A23008D2718 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6D3C045F23A02A37008D2718 /* CardPresenterSections.swift */,
+				6D3C046123A02AB9008D2718 /* CardModelSections.swift */,
+				6D3C046323A02DA5008D2718 /* CardPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6D58F93323985C0B0095C37D /* Iteractor */ = {
+			isa = PBXGroup;
+			children = (
+				6D58F93423985C1E0095C37D /* IteractorProtocol.swift */,
+				6D58F93623985C660095C37D /* Interactor.swift */,
+			);
+			path = Iteractor;
+			sourceTree = "<group>";
+		};
+		6DA2BB3423941A280040FF52 /* DataManagementCore */ = {
+			isa = PBXGroup;
+			children = (
+				6DA2BB3F23941D490040FF52 /* DarkMAgic */,
+				6DA2BB3523941A360040FF52 /* CustomView */,
+				6D6AB6AA23A960E100813BEC /* ViewControllerProtocl.swift */,
+			);
+			path = DataManagementCore;
+			sourceTree = "<group>";
+		};
+		6DA2BB3523941A360040FF52 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				6DA2BB3623941AB70040FF52 /* CustomCollectionViewCell.swift */,
+				6DA2BB3723941AB70040FF52 /* CustomCollectionViewCell.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		6DA2BB3A23941C230040FF52 /* ServiceProxy */ = {
+			isa = PBXGroup;
+			children = (
+				6DA2BB3C23941C580040FF52 /* DMServiceProxy.h */,
+				6DA2BB3D23941C580040FF52 /* DMServiceProxy.m */,
+				6DA2BB3B23941C580040FF52 /* DatnaManagement-Bridging-Header.h */,
+				6DA2BB4523941F450040FF52 /* Entities */,
+				6DFE5AF22396FCE60017AB7D /* GenericGetMethod.swift */,
+			);
+			path = ServiceProxy;
+			sourceTree = "<group>";
+		};
+		6DA2BB3F23941D490040FF52 /* DarkMAgic */ = {
+			isa = PBXGroup;
+			children = (
+				6DA2BB4023941D5C0040FF52 /* Result.swift */,
+			);
+			path = DarkMAgic;
+			sourceTree = "<group>";
+		};
+		6DA2BB4523941F450040FF52 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6DA2BB4223941F3D0040FF52 /* UserOC.h */,
+				6DA2BB4323941F3D0040FF52 /* UserOC.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		6DA2BB462394222A0040FF52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DA2BB47239422380040FF52 /* User.swift */,
+				6DFE5AEE2396F0710017AB7D /* CardModel.swift */,
+				6DFE5AF02396F0C90017AB7D /* Image.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6DE2E9062395ABF10031472F /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				6DE2E9072395AC090031472F /* DataManagerProtocol.swift */,
+				6DE2E9092395AF910031472F /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		6DF2771123941103007414A5 = {
+			isa = PBXGroup;
+			children = (
+				6DA2BB3423941A280040FF52 /* DataManagementCore */,
+				6DF2771C23941103007414A5 /* DatnaManagement */,
+				6DF2771B23941103007414A5 /* Products */,
+				29BDA974425FB19413C17FD4 /* Pods */,
+				F2B6C3EA0B67DF7D4D9C197A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6DF2771B23941103007414A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DF2771A23941103007414A5 /* DatnaManagement.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DF2771C23941103007414A5 /* DatnaManagement */ = {
+			isa = PBXGroup;
+			children = (
+				6D3C045E23A02A23008D2718 /* Presenter */,
+				6D58F93323985C0B0095C37D /* Iteractor */,
+				6DE2E9062395ABF10031472F /* DataManager */,
+				6DA2BB462394222A0040FF52 /* Model */,
+				6DA2BB3A23941C230040FF52 /* ServiceProxy */,
+				6DF2771D23941103007414A5 /* AppDelegate.swift */,
+				6DF2771F23941103007414A5 /* SceneDelegate.swift */,
+				6DF2772123941103007414A5 /* ViewController.swift */,
+				6DF2772323941103007414A5 /* Main.storyboard */,
+				6DF2772623941104007414A5 /* Assets.xcassets */,
+				6DF2772823941104007414A5 /* LaunchScreen.storyboard */,
+				6DF2772B23941104007414A5 /* Info.plist */,
+			);
+			path = DatnaManagement;
+			sourceTree = "<group>";
+		};
+		F2B6C3EA0B67DF7D4D9C197A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D58F92A23984FCA0095C37D /* AFNetworking.framework */,
+				851533B5118A00936DE64E0F /* Pods_DatnaManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DF2771923941103007414A5 /* DatnaManagement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF2772E23941104007414A5 /* Build configuration list for PBXNativeTarget "DatnaManagement" */;
+			buildPhases = (
+				FB866199C7A2C1A83269229B /* [CP] Check Pods Manifest.lock */,
+				6DF2771623941103007414A5 /* Sources */,
+				6DF2771723941103007414A5 /* Frameworks */,
+				6DF2771823941103007414A5 /* Resources */,
+				FFC41E114318CA7CA3D66370 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DatnaManagement;
+			productName = DatnaManagement;
+			productReference = 6DF2771A23941103007414A5 /* DatnaManagement.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DF2771223941103007414A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = user159106;
+				TargetAttributes = {
+					6DF2771923941103007414A5 = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 6DF2771523941103007414A5 /* Build configuration list for PBXProject "DatnaManagement" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DF2771123941103007414A5;
+			productRefGroup = 6DF2771B23941103007414A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DF2771923941103007414A5 /* DatnaManagement */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DF2771823941103007414A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF2772A23941104007414A5 /* LaunchScreen.storyboard in Resources */,
+				6DF2772723941104007414A5 /* Assets.xcassets in Resources */,
+				6DF2772523941103007414A5 /* Main.storyboard in Resources */,
+				6DA2BB3923941AB70040FF52 /* CustomCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FB866199C7A2C1A83269229B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DatnaManagement-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFC41E114318CA7CA3D66370 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DatnaManagement/Pods-DatnaManagement-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DatnaManagement/Pods-DatnaManagement-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DatnaManagement/Pods-DatnaManagement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DF2771623941103007414A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3C046023A02A37008D2718 /* CardPresenterSections.swift in Sources */,
+				6DA2BB4423941F3D0040FF52 /* UserOC.m in Sources */,
+				6DFE5AF12396F0C90017AB7D /* Image.swift in Sources */,
+				6D58F93723985C660095C37D /* Interactor.swift in Sources */,
+				6D6AB6AB23A960E100813BEC /* ViewControllerProtocl.swift in Sources */,
+				6D3C046423A02DA5008D2718 /* CardPresenter.swift in Sources */,
+				6DFE5AF32396FCE60017AB7D /* GenericGetMethod.swift in Sources */,
+				6DFE5AEF2396F0710017AB7D /* CardModel.swift in Sources */,
+				6DE2E90A2395AF910031472F /* DataManager.swift in Sources */,
+				6DA2BB4123941D5C0040FF52 /* Result.swift in Sources */,
+				6DF2772223941103007414A5 /* ViewController.swift in Sources */,
+				6DA2BB3E23941C580040FF52 /* DMServiceProxy.m in Sources */,
+				6DA2BB48239422380040FF52 /* User.swift in Sources */,
+				6D58F93523985C1E0095C37D /* IteractorProtocol.swift in Sources */,
+				6DF2771E23941103007414A5 /* AppDelegate.swift in Sources */,
+				6DF2772023941103007414A5 /* SceneDelegate.swift in Sources */,
+				6DA2BB3823941AB70040FF52 /* CustomCollectionViewCell.swift in Sources */,
+				6D3C046223A02AB9008D2718 /* CardModelSections.swift in Sources */,
+				6DE2E9082395AC090031472F /* DataManagerProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6DF2772323941103007414A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DF2772423941103007414A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DF2772823941104007414A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DF2772923941104007414A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DF2772C23941104007414A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DF2772D23941104007414A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DF2772F23941104007414A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C141530C0FD14D138D3B60 /* Pods-DatnaManagement.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DURMPUBZ2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DatnaManagement/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.apostol.dados.DatnaManagement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DatnaManagement/ServiceProxy/DatnaManagement-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DF2773023941104007414A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29445AC25546112670E18404 /* Pods-DatnaManagement.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DURMPUBZ2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DatnaManagement/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandru.apostol.dados.DatnaManagement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DatnaManagement/ServiceProxy/DatnaManagement-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DF2771523941103007414A5 /* Build configuration list for PBXProject "DatnaManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF2772C23941104007414A5 /* Debug */,
+				6DF2772D23941104007414A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DF2772E23941104007414A5 /* Build configuration list for PBXNativeTarget "DatnaManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF2772F23941104007414A5 /* Debug */,
+				6DF2773023941104007414A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DF2771223941103007414A5 /* Project object */;
+}

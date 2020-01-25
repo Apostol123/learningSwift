@@ -265,13 +265,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1LY-4s-MB1">
                                         <rect key="frame" x="16" y="18" width="382" height="48"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0Z-Wx-LO1">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0Z-Wx-LO1">
                                                 <rect key="frame" x="0.0" y="0.0" width="294" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59o-0e-HDt">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59o-0e-HDt">
                                                 <rect key="frame" x="302" y="0.0" width="80" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="ZDg-Lb-bui"/>
+                                                    <constraint firstAttribute="width" constant="80" id="j9G-6f-h1Z"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
                                                 <state key="normal" title="Enviar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -281,6 +285,12 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="59o-0e-HDt" firstAttribute="leading" secondItem="K0Z-Wx-LO1" secondAttribute="trailing" constant="16" id="BW2-1Z-xth"/>
+                                            <constraint firstItem="K0Z-Wx-LO1" firstAttribute="leading" secondItem="1LY-4s-MB1" secondAttribute="leading" id="YRj-Rl-IGV"/>
+                                            <constraint firstItem="K0Z-Wx-LO1" firstAttribute="top" secondItem="1LY-4s-MB1" secondAttribute="top" id="sty-Ao-ypb"/>
+                                            <constraint firstAttribute="bottom" secondItem="K0Z-Wx-LO1" secondAttribute="bottom" id="wQG-sQ-eDj"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

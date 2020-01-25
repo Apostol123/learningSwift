@@ -22,7 +22,7 @@ class ChatViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(messageTableViewTapped))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(rescaleMessageZone))
         
         self.tableView.addGestureRecognizer(tapGesture)
         
@@ -32,8 +32,8 @@ class ChatViewController: UIViewController {
         tableView.estimatedRowHeight = 120
     }
     
-    @objc func messageTableViewTapped() {
-        self.messageTextField.endEditing(true)
+    @objc func rescaleMessageZone() {
+        self.messageTextField.resignFirstResponder()
         UIView.animate(withDuration: 0.5) {
             self.textBoxHight.constant = 128
             self.view.layoutIfNeeded()
@@ -53,9 +53,29 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
+        self.messageTextField.endEditing(true)
+        self.sendButton.isEnabled = false
+        self.messageTextField.isEnabled = false
+        guard let messageText = messageTextField.text else {
+            return
+        }
+        
+        let messagesDB = Database.database().reference().child("Messages")
+        let messageDict = ["sender": Auth.auth().currentUser?.email,
+                           "body":  messageText]
+        messagesDB.childByAutoId().setValue(messageDict) { (error, ref) in
+            if error != nil {
+                print(error)
+            }else {
+                self.sendButton.isEnabled = true
+                self.messageTextField.isEnabled = true
+                self.messageTextField.text = ""
+                print("mesage guardado correctamente")
+                
+            }
+            
+        }
     }
- 
-
 }
 
 extension ChatViewController : UITableViewDelegate , UITableViewDataSource {
@@ -87,7 +107,7 @@ extension ChatViewController: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        messageTableViewTapped()
+        rescaleMessageZone()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

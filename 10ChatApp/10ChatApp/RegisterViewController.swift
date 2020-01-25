@@ -48,11 +48,15 @@ class RegisterViewController: UIViewController {
                                   self.present(alert, animated: true, completion: nil)
             return
         }
+        
+        
         Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
             if error != nil {
                 print(error!)
             } else {
+                
                 self.performSegue(withIdentifier: "fromRegisterToChat", sender: self)
+                
             }
         }
     }

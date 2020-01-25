@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import ChameleonFramework
 
 class ChatViewController: UIViewController {
 
@@ -29,6 +30,7 @@ class ChatViewController: UIViewController {
         self.tableView.addGestureRecognizer(tapGesture)
         
         tableView.register(UINib(nibName: "MessageTableViewCell", bundle: nil), forCellReuseIdentifier: "messageCell")
+        tableView.separatorStyle = .none
         
         self.configureTableView()
         retriveMessagesFromFirebase()
@@ -114,6 +116,13 @@ extension ChatViewController : UITableViewDelegate , UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath) as! MessageTableViewCell
         cell.userNameLabel.text = messagesArray[indexPath.row].sender
         cell.messageLabel.text = messagesArray[indexPath.row].body
+        if cell.userNameLabel.text == Auth.auth().currentUser?.email {
+            cell.messageImageView.backgroundColor = UIColor.flatLime()
+            cell.messageBackground.backgroundColor = UIColor.flatBlue()
+        }else {
+            cell.messageImageView.backgroundColor = UIColor.flatWatermelon()
+            cell.messageBackground.backgroundColor = UIColor.flatWhite()
+        }
         return cell
     }
     

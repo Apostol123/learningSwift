@@ -15,21 +15,43 @@ class ChatViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var messageTextField: UITextField!
     @IBOutlet var sendButton: UIButton!
-    let messagesArray : [Message] = [Message(),Message(),Message()]
+    var messagesArray : [Message] = [Message]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        self.messageTextField.delegate = self
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(rescaleMessageZone))
         
         self.tableView.addGestureRecognizer(tapGesture)
         
-        self.messageTextField.delegate = self
         tableView.register(UINib(nibName: "MessageTableViewCell", bundle: nil), forCellReuseIdentifier: "messageCell")
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 120
+        
+        self.configureTableView()
+        retriveMessagesFromFirebase()
+    }
+    
+    func retriveMessagesFromFirebase() {
+        let messagesDB = Database.database().reference().child("Messages")
+        
+        messagesDB.observe(.childAdded) { (data) in
+            let dataValue = data.value as! Dictionary<String, String>
+            let sender = dataValue["sender"]!
+            let body = dataValue["body"]!
+            
+            let message = Message(sender: sender, body: body)
+            self.messagesArray.append(message)
+            self.configureTableView()
+            self.tableView.reloadData()
+        }
+    }
+    
+    func configureTableView() {
+                tableView.rowHeight = UITableView.automaticDimension
+               tableView.estimatedRowHeight = 120
     }
     
     @objc func rescaleMessageZone() {

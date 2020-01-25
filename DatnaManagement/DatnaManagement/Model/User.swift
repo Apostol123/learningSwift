@@ -9,14 +9,13 @@
 import Foundation
 
 public struct User {
-   public let id : String
-   public let name : String
+   public let id : String = "Alex"
+   public let name : String = "Apostol"
 }
 
 extension User {
-    init(with model: UserOC) {
-        self.id = model.userId
-        self.name = model.name
+    init(model: UserOC) {
+       
     }
 }
 

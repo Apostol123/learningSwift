@@ -17,7 +17,7 @@ class DataManager {
 extension DataManager : DataMangerProtocol {
     func getAllUsers(completion: @escaping (Result<User>) -> Void) {
         serviceProxy.getAllUSers { users in
-            completion(.succes(User(with: users)))
+            completion(.succes(User(model: users)))
         }
     }
     

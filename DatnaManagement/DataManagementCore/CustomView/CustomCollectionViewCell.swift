@@ -19,6 +19,10 @@ class CustomCollectionViewCell: UICollectionViewCell {
         
     }
 
+    public func configure(name: String) {
+        self.nameLabel.text = name
+    }
+    
     @IBAction func seeTasksPressed(_ sender: UIButton) {
     }
 }

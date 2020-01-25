@@ -11,9 +11,11 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
         
         let dm = DataManager()
         let interactor = Interactor(dataManager: dm)
@@ -22,6 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
             case  let .succes(model):
                 let presenter = CardPresenter(interactor: interactor, model: model)
+                let NC = UINavigationController(rootViewController: ViewController(presenter: presenter))
+                self.window?.rootViewController = NC
+                self.window?.makeKeyAndVisible()
             case .failure(_):
                 break
             

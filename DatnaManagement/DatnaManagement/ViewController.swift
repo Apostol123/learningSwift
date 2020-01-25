@@ -16,9 +16,23 @@ class ViewController: UIViewController {
             collectionView.reloadData()
         }
     }
-   
+    
+    let presenter: CardPresenterProtocol
+    
+    init(presenter: CardPresenter) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
         self.collectionView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "customView")
     }
 
@@ -44,6 +58,7 @@ extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource
             
         case .userData(let name):
             let cell : CustomCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "customView", for: indexPath) as! CustomCollectionViewCell
+            cell.configure(name: name)
             return cell
         }
     }

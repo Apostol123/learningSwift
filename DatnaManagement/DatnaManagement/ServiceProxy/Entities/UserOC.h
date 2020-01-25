@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UserOC : NSObject
 
-@property (nonatomic, strong) NSString *userId;
-@property (nonatomic, strong ) NSString *name;
+@property (nonatomic, weak) NSString *userId;
+@property (nonatomic, weak) NSString *name;
 
 @end
 

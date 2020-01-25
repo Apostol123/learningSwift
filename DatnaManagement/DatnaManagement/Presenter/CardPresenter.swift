@@ -34,3 +34,13 @@ extension CardPresenter : ViewControllerProtocol {
     }
     
 }
+
+extension CardPresenter : CardPresenterProtocol {
+    func initialState() {
+        if let model = self.model {
+            self.view?.refresh(self.layout(model))
+    }
+    }
+    
+    
+}

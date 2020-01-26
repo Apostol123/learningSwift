@@ -54,8 +54,18 @@ class RegisterViewController: UIViewController {
             if error != nil {
                 print(error!)
             } else {
+                let usersDB = Database.database().reference().child("Users")
+                let usersDict = ["username": email]
+                usersDB.childByAutoId().setValue(usersDict) { (error, ref) in
+                    if error != nil {
+                        print(error)
+                    } else {
+                           self.performSegue(withIdentifier: "fromRegisterToChat", sender: self)
+                    }
+                    
+                }
+             
                 
-                self.performSegue(withIdentifier: "fromRegisterToChat", sender: self)
                 
             }
         }

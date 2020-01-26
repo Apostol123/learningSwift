@@ -7,26 +7,50 @@
 //
 
 import UIKit
+import Firebase
 
 class UserListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var usersArray = [User]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource  = self
+        tableView.register(UINib(nibName: "MessageTableViewCell", bundle: nil), forCellReuseIdentifier: "messageCell")
+        self.retriveMessagesFromFirebase()
 
-        // Do any additional setup after loading the view.
     }
     
+ 
+    
+
+    func retriveMessagesFromFirebase() {
+        let messagesDB = Database.database().reference().child("Users")
+        
+        messagesDB.observe(.childAdded) { (data) in
+            let dataValue = data.value as! Dictionary<String,String>
+            let email = dataValue["username"]!
+           
+            let user = User(email: email)
+            self.usersArray.append(user)
+            self.tableView.reloadData()
+        }
+    }
 
 }
 
 extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return usersArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell") as! MessageTableViewCell
+        cell.userNameLabel.isHidden = true
+        cell.messageLabel.text = usersArray[indexPath.row].email
+        return cell
     }
     
     

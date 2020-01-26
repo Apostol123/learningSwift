@@ -14,10 +14,6 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if Auth.auth().currentUser != nil {
-                        self.performSegue(withIdentifier: "fromWelcomeToChat", sender: self)
-        }
-        
     }
 
 

@@ -114,6 +114,7 @@
                                         </state>
                                         <connections>
                                             <action selector="registerPressed:" destination="1ex-Hu-3AR" eventType="touchUpInside" id="7w8-M4-TPg"/>
+                                            <segue destination="SDN-T8-egP" kind="show" identifier="fromRegisterToChat" id="NLJ-tB-jHa"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -160,12 +161,42 @@
                         <outlet property="labelPassword2" destination="Hc4-1u-g2k" id="b1b-SJ-F8f"/>
                         <outlet property="termsAndConditionLabel" destination="7MX-mH-qB3" id="vtV-et-xIq"/>
                         <outlet property="termsAndConditionSwitch" destination="JS5-Kz-Xy9" id="wgv-Gz-ULn"/>
-                        <segue destination="kKy-2N-zxz" kind="show" identifier="fromRegisterToChat" id="B9r-bB-TEl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nr4-Wy-zaF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2362.3188405797105" y="-1454.4642857142856"/>
+        </scene>
+        <!--User List View Controller-->
+        <scene sceneID="B3H-e4-b6o">
+            <objects>
+                <viewController id="SDN-T8-egP" customClass="UserListViewController" customModule="_0ChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P7U-TC-fnR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gPN-km-sHM">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gPN-km-sHM" firstAttribute="leading" secondItem="unL-ce-uof" secondAttribute="leading" id="Cpy-Xj-c52"/>
+                            <constraint firstItem="unL-ce-uof" firstAttribute="trailing" secondItem="gPN-km-sHM" secondAttribute="trailing" id="PTZ-fb-Nax"/>
+                            <constraint firstItem="gPN-km-sHM" firstAttribute="top" secondItem="unL-ce-uof" secondAttribute="top" id="iZA-wi-WKa"/>
+                            <constraint firstItem="unL-ce-uof" firstAttribute="bottom" secondItem="gPN-km-sHM" secondAttribute="bottom" id="uBE-dF-ZrD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="unL-ce-uof"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BIp-yG-tNH"/>
+                    <connections>
+                        <outlet property="tableView" destination="gPN-km-sHM" id="sAY-Zk-v9r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="msA-Tu-gzi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3648" y="-984"/>
         </scene>
         <!--Entrar Ahora-->
         <scene sceneID="RIc-Wn-l2x">
@@ -200,6 +231,7 @@
                                         </state>
                                         <connections>
                                             <action selector="loginPressed:" destination="azs-o6-W4W" eventType="touchUpInside" id="ew5-HW-xzc"/>
+                                            <segue destination="SDN-T8-egP" kind="show" identifier="fromLoginToChat" id="nSC-mj-wU5"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -222,7 +254,6 @@
                     <connections>
                         <outlet property="emailTextField" destination="wLQ-Cx-QwR" id="shZ-5v-wgG"/>
                         <outlet property="passwordLabel" destination="ynt-QB-r4Y" id="rJT-Gk-dBf"/>
-                        <segue destination="kKy-2N-zxz" kind="show" identifier="fromLoginToChat" id="1OR-ow-Jh0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wi8-oh-ohR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -330,7 +361,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="65Z-kA-DM6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4044.9275362318845" y="-1098.2142857142856"/>
+            <point key="canvasLocation" x="5506" y="-1055"/>
         </scene>
     </scenes>
     <resources>
@@ -339,6 +370,6 @@
         <image name="lighthouse-4208843_1280" width="1280" height="853"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8VK-FH-AT5"/>
+        <segue reference="NLJ-tB-jHa"/>
     </inferredMetricsTieBreakers>
 </document>

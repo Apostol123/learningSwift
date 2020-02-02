@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import ChameleonFramework
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController , LogOutProtocol{
 
     @IBOutlet weak var textBoxHight: NSLayoutConstraint!
     @IBOutlet var tableView: UITableView!
@@ -67,13 +67,7 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func logoutPressed(_ sender: UIBarButtonItem) {
-         do {
-            try Auth.auth().signOut()
-            
-        } catch  {
-            print("No se ha podido hacer el logut")
-        }
-        navigationController?.popToRootViewController(animated: true)
+         logOut()
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
@@ -146,3 +140,5 @@ extension ChatViewController: UITextFieldDelegate {
         return true
     }
 }
+
+

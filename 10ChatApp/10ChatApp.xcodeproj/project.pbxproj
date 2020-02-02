@@ -22,6 +22,7 @@
 		6DC16C2123D8A38F00BF61E0 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC16C1F23D8A38F00BF61E0 /* MessageTableViewCell.swift */; };
 		6DC16C2223D8A38F00BF61E0 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DC16C2023D8A38F00BF61E0 /* MessageTableViewCell.xib */; };
 		6DC57CE223DB83280010CC93 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC57CE123DB83280010CC93 /* Message.swift */; };
+		6DFE403B23E2261C002616FA /* LogOutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE403A23E2261C002616FA /* LogOutProtocol.swift */; };
 		E34E9AADBC525343C7BD9C2F /* Pods_10ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C7C948543C8E49F0E27946 /* Pods_10ChatApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		6DC16C1F23D8A38F00BF61E0 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		6DC16C2023D8A38F00BF61E0 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
 		6DC57CE123DB83280010CC93 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = 10ChatApp/ModelData/Message.swift; sourceTree = SOURCE_ROOT; };
+		6DFE403A23E2261C002616FA /* LogOutProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutProtocol.swift; sourceTree = "<group>"; };
 		F4C7C948543C8E49F0E27946 /* Pods_10ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_10ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 		6D12374123CE5EFC001EBE91 /* 10ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				6DFE403923E225FA002616FA /* LogOutProtocol */,
 				6DC57CE323DB833A0010CC93 /* ModelData */,
 				6DC16C1E23D8A32300BF61E0 /* MessageCell */,
 				6D12375623CE5F51001EBE91 /* GoogleService-Info.plist */,
@@ -123,6 +126,14 @@
 				6D50EC3823DDCBB200633333 /* User.swift */,
 			);
 			path = ModelData;
+			sourceTree = "<group>";
+		};
+		6DFE403923E225FA002616FA /* LogOutProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				6DFE403A23E2261C002616FA /* LogOutProtocol.swift */,
+			);
+			path = LogOutProtocol;
 			sourceTree = "<group>";
 		};
 		F63D15886F923202F5AEBAF7 /* Pods */ = {
@@ -251,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DFE403B23E2261C002616FA /* LogOutProtocol.swift in Sources */,
 				6DC16C2123D8A38F00BF61E0 /* MessageTableViewCell.swift in Sources */,
 				6DADBD7723D1081F002890C2 /* LoginViewController.swift in Sources */,
 				6D12374723CE5EFC001EBE91 /* WelcomeViewController.swift in Sources */,

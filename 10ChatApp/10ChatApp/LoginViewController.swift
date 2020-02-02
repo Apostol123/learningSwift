@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
         
                   self.performSegue(withIdentifier: "fromLoginToChat", sender: self)
         }
-       
+        self.navigationController?.navigationItem.hidesBackButton = true
 
         // Do any additional setup after loading the view.
     }

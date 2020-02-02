@@ -186,9 +186,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="unL-ce-uof"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BIp-yG-tNH"/>
+                    <navigationItem key="navigationItem" id="BIp-yG-tNH">
+                        <barButtonItem key="rightBarButtonItem" title="Salir" id="gXz-5S-0m1">
+                            <connections>
+                                <action selector="logOutPressed:" destination="SDN-T8-egP" id="3cv-Hr-0A5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="logOutButton" destination="gXz-5S-0m1" id="ufr-2w-abY"/>
                         <outlet property="tableView" destination="gPN-km-sHM" id="sAY-Zk-v9r"/>
+                        <segue destination="kKy-2N-zxz" kind="show" identifier="fromUserListToChat" id="gIM-fN-HJt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="msA-Tu-gzi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -284,7 +292,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rvg-JE-JNc">
-                                <rect key="frame" x="0.0" y="44" width="414" height="724"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="680"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0S2-cx-5bX">

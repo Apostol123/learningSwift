@@ -9,8 +9,9 @@
 import UIKit
 import Firebase
 
-class UserListViewController: UIViewController {
+class UserListViewController: UIViewController, LogOutProtocol {
 
+    @IBOutlet weak var logOutButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     var usersArray = [User]()
     override func viewDidLoad() {
@@ -25,7 +26,10 @@ class UserListViewController: UIViewController {
     
  
     
-
+    @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
+        logOut()
+    }
+    
     func retriveMessagesFromFirebase() {
         let messagesDB = Database.database().reference().child("Users")
         
@@ -36,6 +40,7 @@ class UserListViewController: UIViewController {
             let user = User(email: email)
             self.usersArray.append(user)
             self.tableView.reloadData()
+            
         }
     }
 
@@ -51,6 +56,12 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
         cell.userNameLabel.isHidden = true
         cell.messageLabel.text = usersArray[indexPath.row].email
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sender = usersArray[indexPath.row].email
+        performSegue(withIdentifier: "fromUserListToChat", sender: self)
+        
     }
     
     

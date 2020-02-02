@@ -10,17 +10,24 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    var model = HomeViewControllerModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.navigationBar.isHidden = true
         
     }
 
     @IBAction func loginButtonPressed(_ sender: UIButton) {
+        
     }
     
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
+        if model.isUserLogged() {
+            
+        } else {
+            navigationController?.pushViewController(RegisterViewController(nibName: nil, bundle: nil), animated: true)
+        }
     }
     
     /*

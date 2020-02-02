@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="_ChatApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Register" translatesAutoresizingMaskIntoConstraints="NO" id="THO-DY-xLl">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="nK1-cu-bJb">
+                    <rect key="frame" x="16" y="254" width="382" height="154"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bfk-fK-l5B">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="19"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1y4-V7-GZW">
+                            <rect key="frame" x="0.0" y="60" width="382" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="repeat password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KYg-hT-bfY">
+                            <rect key="frame" x="0.0" y="120" width="382" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Lun-C9-ewo">
+                    <rect key="frame" x="16" y="451" width="382" height="36"/>
+                    <subviews>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XV8-eJ-Ql8">
+                            <rect key="frame" x="0.0" y="0.0" width="51" height="36"/>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms And Condtion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSI-gi-efp">
+                            <rect key="frame" x="57" y="0.0" width="325" height="36"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Xqv-jd-4IA"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlL-RE-8RM">
+                    <rect key="frame" x="16" y="781" width="382" height="32"/>
+                    <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="BLJ-ER-JRF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
+                    <state key="normal" title="Register">
+                        <color key="titleColor" red="1" green="0.89041095889999999" blue="0.79452054790000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XlL-RE-8RM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6P0-gO-Lln"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="THO-DY-xLl" secondAttribute="trailing" id="7PV-QZ-Yvf"/>
+                <constraint firstAttribute="bottom" secondItem="THO-DY-xLl" secondAttribute="bottom" id="MxS-aC-QEj"/>
+                <constraint firstItem="THO-DY-xLl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PbS-L0-5Sm"/>
+                <constraint firstItem="Lun-C9-ewo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Q2Z-br-2L2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="XlL-RE-8RM" secondAttribute="bottom" constant="49" id="Rpq-H3-R8R"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nK1-cu-bJb" secondAttribute="trailing" constant="16" id="UsG-Gd-hJy"/>
+                <constraint firstItem="nK1-cu-bJb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="210" id="gCn-d5-ki9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XlL-RE-8RM" secondAttribute="trailing" constant="16" id="hvG-hu-eFc"/>
+                <constraint firstItem="THO-DY-xLl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ijp-mo-5e3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lun-C9-ewo" secondAttribute="trailing" constant="16" id="pZh-eV-oUu"/>
+                <constraint firstItem="Lun-C9-ewo" firstAttribute="top" secondItem="nK1-cu-bJb" secondAttribute="bottom" constant="43" id="wCM-Ok-W2a"/>
+                <constraint firstItem="nK1-cu-bJb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xSX-mh-XzK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="79"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Register" width="426.66665649414062" height="240"/>
+    </resources>
+</document>

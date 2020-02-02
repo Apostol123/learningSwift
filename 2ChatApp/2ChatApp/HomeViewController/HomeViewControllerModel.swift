@@ -7,10 +7,25 @@
 //
 
 import Foundation
+import Firebase
 
 public class HomeViewControllerModel {
+    
+    public weak var view: HomeViewControllerProtocol?
     
     public init() {
         
     }
+}
+
+extension HomeViewControllerModel: HomeViewControllerProtocol {
+    public func isUserLogged() -> Bool {
+        if Auth.auth().currentUser != nil {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    
 }

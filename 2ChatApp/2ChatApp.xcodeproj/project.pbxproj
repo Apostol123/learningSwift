@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		29C2AEAAA08A98A0E83563B1 /* Pods_2ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C6F761B01CFF913F3BCBBA /* Pods_2ChatApp.framework */; };
 		6D34DEDF23E7395400DCB198 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D34DEDE23E7395400DCB198 /* GoogleService-Info.plist */; };
+		6D34DEE123E739EF00DCB198 /* HomeViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEE023E739EF00DCB198 /* HomeViewControllerProtocol.swift */; };
+		6D34DEE523E73E8C00DCB198 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEE323E73E8C00DCB198 /* RegisterViewController.swift */; };
+		6D34DEE623E73E8C00DCB198 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D34DEE423E73E8C00DCB198 /* RegisterViewController.xib */; };
 		6DA9567B23E72E630048AB30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9567A23E72E630048AB30 /* AppDelegate.swift */; };
 		6DA9567D23E72E630048AB30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9567C23E72E630048AB30 /* SceneDelegate.swift */; };
 		6DA9568423E72E640048AB30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9568323E72E640048AB30 /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		6D34DEDE23E7395400DCB198 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6D34DEE023E739EF00DCB198 /* HomeViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerProtocol.swift; sourceTree = "<group>"; };
+		6D34DEE323E73E8C00DCB198 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6D34DEE423E73E8C00DCB198 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		6DA9567723E72E630048AB30 /* 2ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA9567A23E72E630048AB30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DA9567C23E72E630048AB30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D34DEE223E73E7800DCB198 /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6D34DEE323E73E8C00DCB198 /* RegisterViewController.swift */,
+				6D34DEE423E73E8C00DCB198 /* RegisterViewController.xib */,
+			);
+			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
 		6DA9566E23E72E630048AB30 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +82,7 @@
 		6DA9567923E72E630048AB30 /* 2ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				6D34DEE223E73E7800DCB198 /* RegisterViewController */,
 				6D34DEDE23E7395400DCB198 /* GoogleService-Info.plist */,
 				6DA9568E23E72F580048AB30 /* HomeViewController */,
 				6DA9567A23E72E630048AB30 /* AppDelegate.swift */,
@@ -84,6 +100,7 @@
 				6DA9568F23E72F6C0048AB30 /* HomeViewController.swift */,
 				6DA9569023E72F6C0048AB30 /* HomeViewController.xib */,
 				6DA9569323E736840048AB30 /* HomeViewControllerModel.swift */,
+				6D34DEE023E739EF00DCB198 /* HomeViewControllerProtocol.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -166,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DA9568723E72E640048AB30 /* LaunchScreen.storyboard in Resources */,
+				6D34DEE623E73E8C00DCB198 /* RegisterViewController.xib in Resources */,
 				6DA9568423E72E640048AB30 /* Assets.xcassets in Resources */,
 				6DA9569223E72F6C0048AB30 /* HomeViewController.xib in Resources */,
 				6D34DEDF23E7395400DCB198 /* GoogleService-Info.plist in Resources */,
@@ -224,6 +242,8 @@
 				6DA9567B23E72E630048AB30 /* AppDelegate.swift in Sources */,
 				6DA9569423E736840048AB30 /* HomeViewControllerModel.swift in Sources */,
 				6DA9567D23E72E630048AB30 /* SceneDelegate.swift in Sources */,
+				6D34DEE523E73E8C00DCB198 /* RegisterViewController.swift in Sources */,
+				6D34DEE123E739EF00DCB198 /* HomeViewControllerProtocol.swift in Sources */,
 				6DA9569123E72F6C0048AB30 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
